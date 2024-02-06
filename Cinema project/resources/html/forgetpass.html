@@ -1,0 +1,227 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+        <title>Cinema</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+          />
+        <link rel="stylesheet" href="forgetpass.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <body>
+        <!--Tạo header cho trang-->
+        <header>
+            <a href="http://127.0.0.1:5500/menu/menu.html">
+                <img src="..\image/logo.png" alt="Logo" class="logo">
+            </a>
+             
+            <input type="checkbox" id="menu">
+            <label for="menu"> 
+                <i class="fa-solid fa-bars"></i></label>
+            <nav> 
+                <ul>
+                  <li>
+                    <a href="#0">Phim▾</a>
+                    <ul class="dropdown">
+                      <li> <a href="..\film\film_rc.html">Phim đang chiếu</a></li>
+                      <li> <a href="..\film\film_cm.html">Phim sắp chiếu</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#0">Thành viên▾</a>
+                    <ul class="dropdown">
+                      <li> <a href="..\menu/info.html">Tài khoản thành viên</a></li>
+                      <li> <a href="..\addition/membership.html">Quyền lợi</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="..\addition/event.html">Khuyến mãi</a>
+                  </li>
+                  <li>
+                    <a href="#0">Giới thiệu▾</a>
+                    <ul class="dropdown">
+                      <li> <a href="..\addition/aboutus.html">Về chúng tôi</a></li>
+                      <li> <a href="..\addition/rule.html">Các quy định</a></li>
+                      <li> <a href="..\addition/term.html">Các điều khoản</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="..\addition/contact.html">Liên hệ</a>
+                  </li>
+              </ul>
+              
+            </nav>
+            
+            <div class="validation">
+              <span class="register">
+                <a href="..\login-register\register.html"> <b> Đăng ký </b></a>
+              </span>
+              <hr>
+              <span class="login">
+                <a href="..\login-register\login.html"> <b>Đăng nhập</b></a>
+              </span>
+            </div>
+        </header>   
+
+        
+        <section class="slider">
+            <div class="container">
+              <div class="slider-content">
+                <div class="slider-content-left">
+                  <!--Tạo khung nhập-->
+                    <div class="form">
+                        <div class="form-header">
+                            <h3>LẤY LẠI MẬT KHẨU</h3>
+                        </div>
+
+                        <div class="form-content">
+                            <form action="" method="post">
+                                <label for="name">Email/Số điện thoại:<span class="required"> *</span></label><br>
+                                <input type="text" class="gform" name="name" required><br>
+                                <button type="submit" class="submit"> GỬI </button>
+                            </form> 
+
+                        <div class="return">
+                            <a href="..\login-register/login.html">Quay về trang đăng nhập</a>
+                        </div>                           
+                        </div>
+                    </div>                 
+            </div>
+  
+                <!--Khung banner chương trình đang diễn ra-->
+                <div class="slider-content-right">
+                  <div class="wrapper">
+                      <div class="image-container">
+                          <div class="carousel">
+                              <img src="image/1.jpg" alt="" />
+                          </div>
+                      </div>
+  
+                      <div class="image-container">
+                          <div class="carousel">
+                              <img src="image/2.jpg" alt="" />
+                          </div>
+                      </div>
+  
+                      <div class="image-container">
+                          <div class="carousel">
+                              <img src="image/3.jpg" alt="" />
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <button class="backtop">         
+            <a href="#top"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+          </button>
+  
+        <div class="footblank"> </div>
+
+          <!-- java -->
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+          <!-- js ảnh -->
+        <script>
+            $(document).ready(function(){
+                $(".wrapper").slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: true,
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    
+        prevArrow:"<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+
+                });
+            });
+        </script>
+
+
+        <!--Thông tin Footer-->
+      <footer>
+          <div class="content">
+            <div class="top">
+              <div class="logo-details">
+                <a href="http://127.0.0.1:5500/menu/menu.html">
+                  <img src="https://blog.luyencode.net/wp-content/uploads/2020/10/cd-logo.png" alt="Logo" class="logo">
+              </a>
+              </div>
+              <div class="media-icons">
+                <a href="#0"><i class="fa-brands fa-facebook"></i></a>             
+                <a href="#0"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#0"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <div class="link-boxes">
+                <h4>THÔNG TIN</h4>
+                <ul class="box">
+                  <li><a href="#0">Giới thiệu</a></li>
+                  <li><a href="#0">Tin tức</a></li>
+                  <li><a href="#0">Hỏi & Đáp</a></li>
+                  <li><a href="#0">Liên hệ</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>CINEMA</h4>
+                <ul class="box">
+                  <li><a href="#0">Phim đang chiếu</a></li>
+                  <li><a href="#0">Phim sắp chiếu</a></li>
+                  <li><a href="#0">Lịch chiếu</a></li>
+                  <li><a href="#0">Khuyến mại</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>ĐIỀU KHOẢN SỬ DỤNG</h4>
+                <ul class="box">
+                  <li><a href="#0">Điều khoản chung</a></li>
+                  <li><a href="#0">Điều khoản giao dịch</a></li>
+                  <li><a href="#0">Chính sách thanh toán</a></li>
+                  <li><a href="#0">Chính sách bảo mật</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                <ul class="box">
+                  <li><a href="#0">Hotline: </a></li>
+                  <li><a href="#0">Giờ làm việc: </a></li>
+                  <li><a href="#0">Địa chỉ: </a></li>
+                  <li><a href="#0">Email hỗ trợ: </a></li>
+                </ul>
+              </div>
+              <!-- <div class="link-boxes">
+                <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                <ul class="box">
+                  <li><a href="#0">//Ngân hàng</a></li>
+                  <li><a href="#0">//momo</a></li>
+                </ul>
+              </div>-->
+            </div>
+          </div>
+      </footer>    
+      
+      
+    </body>
+</html>

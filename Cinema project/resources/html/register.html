@@ -1,0 +1,302 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cinema</title>
+        <link rel="stylesheet" href="register.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    </head>
+    <body>
+        <!--Tạo header cho trang-->
+        <header>
+          <a href="http://127.0.0.1:5500/menu/menu.html">
+              <img src="..\image/logo.png" alt="Logo" class="logo">
+          </a>
+           
+          <input type="checkbox" id="menu">
+          <label for="menu"> 
+              <i class="fa-solid fa-bars"></i></label>
+          <nav> 
+              <ul>
+                <li>
+                  <a href="#0">Phim▾</a>
+                  <ul class="dropdown">
+                    <li> <a href="..\film\film_rc.html">Phim đang chiếu</a></li>
+                    <li> <a href="..\film\film_cm.html">Phim sắp chiếu</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#0">Thành viên▾</a>
+                  <ul class="dropdown">
+                    <li> <a href="..\menu/info.html">Tài khoản thành viên</a></li>
+                    <li> <a href="..\addition/membership.html">Quyền lợi</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="..\addition/event.html">Khuyến mãi</a>
+                </li>
+                <li>
+                  <a href="#0">Giới thiệu▾</a>
+                  <ul class="dropdown">
+                    <li> <a href="..\addition/aboutus.html">Về chúng tôi</a></li>
+                    <li> <a href="..\addition/rule.html">Các quy định</a></li>
+                    <li> <a href="..\addition/term.html">Các điều khoản</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="..\addition/contact.html">Liên hệ</a>
+                </li>
+            </ul>
+            
+          </nav>
+          
+          <div class="validation">
+            <span class="register">
+              <a href="..\login-register\register.html"> <b> Đăng ký </b></a>
+            </span>
+            <hr>
+            <span class="login">
+              <a href="..\login-register\login.html"> <b>Đăng nhập</b></a>
+            </span>
+          </div>
+      </header>       
+
+        <section class="slider">
+          <div class="container">
+            <div class="slider-content">
+              <div class="slider-content-left">
+
+                <!--Tạo khung đăng nhập-->
+                <form class="user-modal">
+                  <div class="form-header">
+                    <span class="login">
+                      <a href="#0" class="valid_login"> ĐĂNG NHẬP </a> 
+                    </span>
+                    <span class="regis active">
+                      <a href="#0" class="valid_regis"> ĐĂNG KÝ</a> 
+                    </span>
+                  </div>
+      
+
+                  <div class="form-content">
+                    <div class="form">
+                        
+                    <!-- Đăng nhập -->
+                        <div class="form login">
+                           <p class="input-title">Email / Số điện thoại: <span class="required">*</span></p>
+                            <input type="text">
+                            <p class="input-title">Mật khẩu: <span class="required">*</span></p>
+                            <input type="password" name="" id="">
+                            <button type="submit" class="submit">ĐĂNG NHẬP</button> <br>
+                            <span class="forget-paswd">
+                              <a href="..\login-register/forgetpass.html">Quên mật khẩu?</a>
+                            </span>
+                        </div>
+                        
+                    <!-- Đăng ký -->
+                        <div class="form regis">
+                            <form action="" method="post">
+                                <label for="name">Họ và tên:<span class="required"> *</span></label><br>
+                                <input type="text" class="gform" name="name" required><br>
+    
+                                <label for="phone">Số điện thoại:<span class="required"> *</span></label><br>
+                                <input type="tel" class="gform" name="phone" required><br>
+    
+                                <label for="email">Email:<span class="required"> *</span></label><br>
+                                <input type="email" class="gform" name="email" required><br>
+    
+                                <div class="fthrow">
+                                    <label for="birth">Ngày sinh (DD/MM/YYYY):<span class="required"> *</span></label><br>
+                                    <input type="date" id="birth" name="birth" required>
+    
+                                    <div class="gender-container">
+                                        <input type="radio" class="round" id="gender-male" name="gender" value="men">
+                                        <label for="gender-male" class="gender-label">Nam</label>
+    
+                                        <input type="radio" class="round" id="gender-female" name="gender" value="wom">
+                                        <label for="gender-female" class="gender-label">Nữ</label>
+                                    </div><br>
+                                </div>
+    
+                                <label for="password">Mật khẩu:<span class="required"> *</span></label><br>
+                                <input type="password" class="gform" name="password" required><br>
+    
+                                <label for="confirm_password">Xác nhận mật khẩu:<span class="required"> *</span></label><br>
+                                <input type="password" class="gform" name="confirm_password" required><br><br>
+                                <div class="law">
+                                    <input type="radio" class="round" id="agreelaw">
+                                    <label for="agreelaw">Tôi đồng ý với 
+                                      <span class="term">
+                                        <a href="..\addition/term.html">điều khoản sử dụng của công ty</a>
+                                      </span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="submit">
+                                    <span>ĐĂNG KÝ</span> 
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+
+              </form>
+              </div>
+
+              <!--Khung banner chương trình đang diễn ra-->
+              <div class="slider-content-right">
+                <div class="wrapper">
+                    <div class="image-container">
+                        <div class="carousel">
+                            <img src="image/1.jpg" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="image-container">
+                        <div class="carousel">
+                            <img src="image/2.jpg" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="image-container">
+                        <div class="carousel">
+                            <img src="image/3.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <button class="backtop">         
+          <a href="#top"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+        </button>
+
+        <!--Thông tin Footer-->
+      <footer>
+          <div class="content">
+            <div class="top">
+              <div class="logo-details">
+                <a href="#0">
+                  <img src="https://blog.luyencode.net/wp-content/uploads/2020/10/cd-logo.png" alt="Logo" class="logo">
+                </a>
+              </div>
+              <div class="media-icons">
+                <a href="#0"><i class="fa-brands fa-facebook"></i></a>             
+                <a href="#0"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#0"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <div class="link-boxes">
+                <h4>THÔNG TIN</h4>
+                <ul class="box">
+                  <li><a href="#0">Giới thiệu</a></li>
+                  <li><a href="#0">Tin tức</a></li>
+                  <li><a href="#0">Hỏi & Đáp</a></li>
+                  <li><a href="#0">Liên hệ</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>CINEMA</h4>
+                <ul class="box">
+                  <li><a href="#0">Phim đang chiếu</a></li>
+                  <li><a href="#0">Phim sắp chiếu</a></li>
+                  <li><a href="#0">Lịch chiếu</a></li>
+                  <li><a href="#0">Khuyến mại</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>ĐIỀU KHOẢN SỬ DỤNG</h4>
+                <ul class="box">
+                  <li><a href="#0">Điều khoản chung</a></li>
+                  <li><a href="#0">Điều khoản giao dịch</a></li>
+                  <li><a href="#0">Chính sách thanh toán</a></li>
+                  <li><a href="#0">Chính sách bảo mật</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                <ul class="box">
+                  <li><a href="#0">Hotline: </a></li>
+                  <li><a href="#0">Giờ làm việc: </a></li>
+                  <li><a href="#0">Địa chỉ: </a></li>
+                  <li><a href="#0">Email hỗ trợ: </a></li>
+                </ul>
+              </div>
+              <!-- <div class="link-boxes">
+                <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                <ul class="box">
+                  <li><a href="#0">//Ngân hàng</a></li>
+                  <li><a href="#0">//momo</a></li>
+                </ul>
+              </div>-->
+            </div>
+          </div>
+      </footer> 
+      
+      <!-- java -->
+      <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    
+
+    <!-- js login/regis -->
+      <script>
+
+        let login = document.querySelector('.form-header .login');
+        let regis = document.querySelector('.form-header .regis');
+        let loginForm = document.querySelectorAll('.form-content .form .login');
+        let regisForm = document.querySelectorAll('.form-content .form .regis');
+        
+        login.onclick = () =>{
+          regis.classList.remove('active');
+          login.classList.add('active');
+        
+          loginForm.forEach(login =>{ login.style.display = 'block' });
+          regisForm.forEach(regis =>{ regis.style.display = 'none' });
+        };
+        
+        regis.onclick = () =>{
+          regis.classList.add('active');
+          login.classList.remove('active');
+        
+          loginForm.forEach(login =>{ login.style.display = 'none' });
+          regisForm.forEach(regis =>{ regis.style.display = 'block' });
+        };
+        
+        </script>
+
+    <!-- js ảnh -->
+        <script>
+            $(document).ready(function(){
+                $(".wrapper").slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: true,
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    
+        prevArrow:"<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+
+                });
+            });
+        </script>
+
+    </body>
+</html>

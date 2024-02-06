@@ -1,0 +1,256 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cinema</title>
+        <link rel="stylesheet" href="verifyemail.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    </head>
+    <body>
+        <!--Tạo header cho trang-->
+        <header>
+          <a href="http://127.0.0.1:5500/menu/menu.html">
+            <img src="..\image/logo.png" alt="Logo" class="logo">
+          </a>
+           
+          <input type="checkbox" id="menu">
+          <label for="menu"> 
+              <i class="fa-solid fa-bars"></i></label>
+              <nav> 
+                <ul>
+                  <li>
+                    <a href="#0">Phim▾</a>
+                    <ul class="dropdown">
+                      <li> <a href="..\film\film_rc.html">Phim đang chiếu</a></li>
+                      <li> <a href="..\film\film_cm.html">Phim sắp chiếu</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#0">Thành viên▾</a>
+                    <ul class="dropdown">
+                      <li> <a href="..\menu/info.html">Tài khoản thành viên</a></li>
+                      <li> <a href="..\addition/membership.html">Quyền lợi</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="..\addition/event.html">Khuyến mãi</a>
+                  </li>
+                  <li>
+                    <a href="#0">Giới thiệu▾</a>
+                    <ul class="dropdown">
+                      <li> <a href="..\addition/aboutus.html">Về chúng tôi</a></li>
+                      <li> <a href="..\addition/rule.html">Các quy định</a></li>
+                      <li> <a href="..\addition/term.html">Các điều khoản</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="..\addition/contact.html">Liên hệ</a>
+                  </li>
+              </ul>
+              
+            </nav>
+          
+          <button class="validation">
+            <i class="fa-solid fa-user fa-2x"></i>
+          </button>
+      </header>
+
+        <div class="noti">
+            <p class="noti-success">
+              Đăng ký tài khoản thành công. Chúng tôi vừa gửi cho bạn một email xác nhận tài khoản, hãy bấm vào link xác nhận email đó trước khi có thể đăng nhập và tận hưởng quyền lợi thành viên của IS207CINE nhé
+            </p>
+
+            <p class="noti-resend">
+              Không nhận được email? Nhấn vào nút dưới đây để gửi lại email xác nhận.
+            </p>
+
+            <button class="resend">Gửi lại email</button>
+              
+              
+              <p >
+                Để tìm hiểu thêm nhiều thông tin hơn về các hoạt động đang diễn ra, bạn hãy <a href="..\menu/menu.html">nhấn vào đây</a> để xem nhé!
+
+              </p>
+        </div>
+
+      
+          <!-- film đang chiếu liên quan -->
+          <div class="film-rela">
+            <div class="film-rela-title">
+              <button class="rela-title">
+                <a href="..\film\film_rc.html" class="r-title"> 
+                  <strong> PHIM ĐANG CHIẾU </strong>
+                </a>
+              </button>
+            </div>
+            <div class="film-rc">
+                <div class="film"> 
+                <div class="film-slider">
+                  <div class="film-img"> 
+                    <a href="#f1"> <img src="..\image/6.png" alt=""> </a> 
+                  </div>
+                </div>
+                <div class="film-slider">
+                  <div class="film-img"> 
+                    <a href="#f2"> <img src="..\image/7.png" alt=""> </a> 
+                  </div>
+                </div>
+                <div class="film-slider">
+                  <div class="film-img"> 
+                    <a href="#f3"> <img src="..\image/8.png" alt=""> </a> 
+                  </div>
+                </div>
+                <div class="film-slider">
+                  <div class="film-img"> 
+                    <a href="#f4"> <img src="..\image/10.png" alt=""> </a> 
+                  </div>
+                </div>
+                <div class="film-slider">
+                  <div class="film-img"> 
+                    <a href="#f5"> <img src="..\image/11.png" alt=""> </a> 
+                  </div>
+                </div>
+                <div class="film-slider">
+                  <div class="film-img"> 
+                    <a href="#f6"> <img src="..\image/12.png" alt=""> </a> 
+                  </div>
+                </div>
+                <div class="film-slider">
+                  <div class="film-img"> 
+                    <a href="#f7"> <img src="..\image/13.png" alt=""> </a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <button class="backtop">         
+        <a href="#top"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+      </button>
+
+
+          <div class="footblank"> </div>
+
+        <!--Thông tin Footer-->
+      <footer>
+          <div class="content">
+            <div class="top">
+              <div class="logo-details">
+                <a href="#0">
+                  <img src="https://blog.luyencode.net/wp-content/uploads/2020/10/cd-logo.png" alt="Logo" class="logo">
+                </a>
+              </div>
+              <div class="media-icons">
+                <a href="#0"><i class="fa-brands fa-facebook"></i></a>             
+                <a href="#0"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#0"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <div class="link-boxes">
+                <h4>THÔNG TIN</h4>
+                <ul class="box">
+                  <li><a href="#0">Giới thiệu</a></li>
+                  <li><a href="#0">Tin tức</a></li>
+                  <li><a href="#0">Hỏi & Đáp</a></li>
+                  <li><a href="#0">Liên hệ</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>CINEMA</h4>
+                <ul class="box">
+                  <li><a href="#0">Phim đang chiếu</a></li>
+                  <li><a href="#0">Phim sắp chiếu</a></li>
+                  <li><a href="#0">Lịch chiếu</a></li>
+                  <li><a href="#0">Khuyến mại</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>ĐIỀU KHOẢN SỬ DỤNG</h4>
+                <ul class="box">
+                  <li><a href="#0">Điều khoản chung</a></li>
+                  <li><a href="#0">Điều khoản giao dịch</a></li>
+                  <li><a href="#0">Chính sách thanh toán</a></li>
+                  <li><a href="#0">Chính sách bảo mật</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                <ul class="box">
+                  <li><a href="#0">Hotline: </a></li>
+                  <li><a href="#0">Giờ làm việc: </a></li>
+                  <li><a href="#0">Địa chỉ: </a></li>
+                  <li><a href="#0">Email hỗ trợ: </a></li>
+                </ul>
+              </div>
+              <!-- <div class="link-boxes">
+                <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                <ul class="box">
+                  <li><a href="#0">//Ngân hàng</a></li>
+                  <li><a href="#0">//momo</a></li>
+                </ul>
+              </div>-->
+            </div>
+          </div>
+      </footer> 
+      
+      <!-- java -->
+      <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    
+        <!-- java film -->
+        <script>
+            $(document).ready(function(){
+      
+      $(".film").slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          prevArrow:"<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+          nextArrow:"<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  
+          responsive: [
+            {
+              breakpoint: 1201,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 951,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 751,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+          ]
+      
+        });
+    });
+  
+          </script>
+
+    </body>
+</html>

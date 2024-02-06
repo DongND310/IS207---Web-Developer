@@ -1,0 +1,16 @@
+table {
+    background-image: url('BTTH1_Hinh2/bg.jpeg');
+    background-size: cover;
+    border: 1px solid black;
+    width: 550px;
+    margin: 0 auto; 
+}
+    th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.custom-image {
+    width: 100px;
+    height: auto;
+  }

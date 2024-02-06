@@ -1,0 +1,332 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cinema</title>
+        <link rel="stylesheet" href="payment.css">
+        <script src="https://kit.fontawesome.com/yourcode.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!--Tạo header cho trang-->
+        <header>
+          <a href="http://127.0.0.1:5500/menu/menu.html">
+              <img src="..\image/logo.png" alt="Logo" class="logo">
+          </a>
+           
+          <input type="checkbox" id="menu">
+          <label for="menu"> 
+              <i class="fa-solid fa-bars"></i></label>
+          <nav> 
+              <ul>
+                <li>
+                  <a href="#0">Phim▾</a>
+                  <ul class="dropdown">
+                    <li> <a href="..\film\film_rc.html">Phim đang chiếu</a></li>
+                    <li> <a href="..\film\film_cm.html">Phim sắp chiếu</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#0">Thành viên▾</a>
+                  <ul class="dropdown">
+                    <li> <a href="..\menu/info.html">Tài khoản thành viên</a></li>
+                    <li> <a href="..\addition/membership.html">Quyền lợi</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#0">Khuyến mãi▾</a>
+                  <ul class="dropdown">
+                    <li> <a href="..\film/film_rc.html">Đang diễn ra</a></li>
+                    <li> <a href="..\film/film_cm.html">Sắp tới</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#0">Giới thiệu▾</a>
+                  <ul class="dropdown">
+                    <li> <a href="..\addition/aboutus.html">Về chúng tôi</a></li>
+                    <li> <a href="..\addition/rule.html">Các quy định</a></li>
+                    <li> <a href="..\addition/term.html">Các điều khoản</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="..\addition/contact.html">Liên hệ</a>
+                </li>
+            </ul>
+            
+          </nav>
+          
+          <div class="validation">
+            <span class="register">
+              <a href="..\login-register\register.html"> <b> Đăng ký </b></a>
+            </span>
+            <hr>
+            <span class="login">
+              <a href="..\login-register\login.html"> <b>Đăng nhập</b></a>
+            </span>
+          </div>
+      </header>
+        <!--Đặt vé-->
+        <section class="booking-body">
+          <div class="top-content">
+            <table class="text-center">
+              <tr>
+              <td>
+                <span class="form-header--unselected ">CHỌN VÉ</span>
+              </td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="56" viewBox="0 0 32 56" fill="none">
+                  <path d="M2 54L29.2108 28.7328C29.6369 28.3372 29.6369 27.6628 29.2108 27.2672L16 15L2 2" stroke="black" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round"/>
+                </svg>              </td>
+              <td>
+                <span class="form-header--selected ">THANH TOÁN</span>
+              </td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="56" viewBox="0 0 32 56" fill="none">
+                  <path d="M2 54L29.2108 28.7328C29.6369 28.3372 29.6369 27.6628 29.2108 27.2672L16 15L2 2" stroke="black" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </td>
+              <td> 
+                <span class="form-header--unselected ">HOÀN TẤT</span>
+              </td>
+            </tr>
+            </table>
+          </div>
+          <!--Thông tin thanh toán-->
+          <div class="container">
+            <div class="left-content">
+                <div class="info-filled"> 
+                    <span>THÔNG TIN NGƯỜI NHẬN VÉ</span><br>
+                    <table>
+                      <tr>
+                        <td>
+                          <label>Họ: <span class="red">*</span></label><br>
+                          <input type="text" class="fill">
+                        </td>
+                        <td> 
+                          <label>Tên: <span class="red">*</span></label><br>
+                          <input type="text" class="fill">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> 
+                          <label>SĐT: <span class="red">*</span></label><br>
+                          <input type="text" class="fill">
+                        </td>
+                        <td> 
+                          <label>Email: <span class="red">*</span></label><br>
+                          <input type="text" class="fill">
+                        </td>
+                      </tr>
+                    </table>
+                </div>
+                <div class="payment-method"> 
+                  <span>HÌNH THỨC THANH TOÁN</span><br>
+                  <hr>
+                    <input type="radio" class="round" id="internet-banking" name="payment" value="internet-banking">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <label for="internet-banking" class="payment-label">Sử dụng Internet Banking</label>
+                    <br>
+
+                    <input type="radio" class="round" id="credit" name="payment" value="credit">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <label for="credit" class="payment-label">Thẻ tín dụng</label>
+                    <br>
+
+                    <input type="radio" class="round" id="momo" name="payment" value="momo">
+                    <img src="image/Logo MoMo Square.png" style="width: 20px;">
+                    <label for="momo" class="payment-label">Thanh toán trực tuyến MoMo</label>
+                    <br>
+              </div>
+            </div>
+            <div class="right-content">
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="3" style="text-align: left;">
+                      <span>THÔNG TIN NGƯỜI NHẬN VÉ</span>
+                      <hr>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-left"><i class="fa-solid fa-user"></i><label>Họ tên</label></td>
+                    <td class="text-right"><span>//ten nguoi dung</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left"><i class="fa-solid fa-envelope"></i><label>Email</label></td>
+                    <td class="text-right"><span>//email</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left"><i class="fa-solid fa-phone"></i><label>Điện thoại</label></td>
+                    <td class="text-right"><span>//sdt</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="3" style="text-align: left;">
+                      <span>HÌNH THỨC THANH TOÁN</span>
+                      <hr>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>//ten hinh thuc thanh toan</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="2" style="text-align: left;">
+                      <span>THÔNG TIN ĐẶT VÉ</span>
+                      <hr>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-left">Ghế</td>
+                    <td class="text-right">Số lượng</td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">//ghe</td>
+                    <td class="text-right">//so luong</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table>
+                <tbody>
+                  <tr>
+                    <td><strong>Tổng cộng</strong></td>
+                    <td class="text-right"><strong>
+                      <span>//tong tien</span>
+                      <span>VND</span>
+                    </strong></td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="submit" name="submit" value="submit">HOÀN TẤT</button>
+            </div>
+          </div>
+
+          <div class="sbm-btn"><button type="submit" name="submit" value="submit">HOÀN TẤT</button></div>
+          <div class="bottom-content">
+            <div class="format-bg-top"></div>
+            <div class="minicart-wrapper">
+              <ul>
+                <li class="item first">
+                  <div class="product-detail">
+                    <table class="info-wrapper">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW5nqd1GUyrOltTiF7YdFAKu_SCaJ3fzTBXuv7JHmwf83C8QsO" alt="PAW Patrol: Phim Siêu Đẳng">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="product-detail">
+                    <table class="info-wrapper">
+                      <tbody>
+                        <tr>
+                          <td class="label" colspan="2">PAW Patrol: Phim Siêu Đẳng</td>
+                        </tr>
+                        <tr>
+                          <td class="label">Suất chiếu:</td>
+                          <td> 1:00 PM </td>
+                        </tr>
+                        <tr>
+                          <td class="label">Ngày:</td>
+                          <td>04/10/2023</td>
+                        </tr>
+                        <tr>
+                          <td class="label">Rạp:</td>
+                          <td> 01</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </li>
+                <li class="timer">
+                  <span>Thời gian giữ ghế</span>
+                  <span id="timer"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="format-bg-bottom"></div>
+          </div>
+        </section>
+
+        <!--Thông tin Footer-->
+      <footer>
+          <div class="content">
+            <div class="top">
+              <div class="logo-details">
+                <a href="#0">
+                  <img src="https://blog.luyencode.net/wp-content/uploads/2020/10/cd-logo.png" alt="Logo" class="logo">
+                </a>
+              </div>
+              <div class="media-icons">
+                <a href="#0"><i class="fa-brands fa-facebook"></i></a>             
+                <a href="#0"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#0"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <div class="link-boxes">
+                <h4>THÔNG TIN</h4>
+                <ul class="box">
+                  <li><a href="#0">Giới thiệu</a></li>
+                  <li><a href="#0">Tin tức</a></li>
+                  <li><a href="#0">Hỏi & Đáp</a></li>
+                  <li><a href="#0">Liên hệ</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>CINEMA</h4>
+                <ul class="box">
+                  <li><a href="#0">Phim đang chiếu</a></li>
+                  <li><a href="#0">Phim sắp chiếu</a></li>
+                  <li><a href="#0">Lịch chiếu</a></li>
+                  <li><a href="#0">Khuyến mại</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>ĐIỀU KHOẢN SỬ DỤNG</h4>
+                <ul class="box">
+                  <li><a href="#0">Điều khoản chung</a></li>
+                  <li><a href="#0">Điều khoản giao dịch</a></li>
+                  <li><a href="#0">Chính sách thanh toán</a></li>
+                  <li><a href="#0">Chính sách bảo mật</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                <ul class="box">
+                  <li><a href="#0">Hotline: </a></li>
+                  <li><a href="#0">Giờ làm việc: </a></li>
+                  <li><a href="#0">Địa chỉ: </a></li>
+                  <li><a href="#0">Email hỗ trợ: </a></li>
+                </ul>
+              </div>
+              <!-- <div class="link-boxes">
+                <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                <ul class="box">
+                  <li><a href="#0">//Ngân hàng</a></li>
+                  <li><a href="#0">//momo</a></li>
+                </ul>
+              </div>-->
+            </div>
+          </div>
+      </footer>        
+    </body>
+</html>

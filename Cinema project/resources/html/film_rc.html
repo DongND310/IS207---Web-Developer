@@ -1,0 +1,324 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+        <title>Cinema</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+          />
+        <link rel="stylesheet" href="film.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <body>
+        <!--Tạo header cho trang-->
+        <header>
+          <a href="http://127.0.0.1:5500/menu/menu.html">
+              <img src="..\image/logo.png" alt="Logo" class="logo">
+          </a>
+           
+          <input type="checkbox" id="menu">
+          <label for="menu"> 
+              <i class="fa-solid fa-bars"></i></label>
+          <nav> 
+              <ul>
+                <li>
+                  <a href="#0">Phim▾</a>
+                  <ul class="dropdown">
+                    <li> <a href="..\film\film_rc.html">Phim đang chiếu</a></li>
+                    <li> <a href="..\film\film_cm.html">Phim sắp chiếu</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#0">Thành viên▾</a>
+                  <ul class="dropdown">
+                    <li> <a href="..\menu/info.html">Tài khoản thành viên</a></li>
+                    <li> <a href="..\addition/membership.html">Quyền lợi</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="..\addition/event.html">Khuyến mãi</a>
+                </li>
+                <li>
+                  <a href="#0">Giới thiệu▾</a>
+                  <ul class="dropdown">
+                    <li> <a href="..\addition/aboutus.html">Về chúng tôi</a></li>
+                    <li> <a href="..\addition/rule.html">Các quy định</a></li>
+                    <li> <a href="..\addition/term.html">Các điều khoản</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="..\addition/contact.html">Liên hệ</a>
+                </li>
+            </ul>
+            
+          </nav>
+          
+          <div class="validation">
+            <span class="register">
+              <a href="..\login-register\register.html"> <b> Đăng ký </b></a>
+            </span>
+            <hr>
+            <span class="login">
+              <a href="..\login-register\login.html"> <b>Đăng nhập</b></a>
+            </span>
+          </div>
+      </header>       
+        
+          <!----------------- Banner ------------->
+          <div class="body-banner">
+            <div class="banner">
+              <div class="banner-slider">
+                <div class="banner-img"> 
+                  <a href="#b1"> <img src="image/1.png" alt=""> </a>
+                </div>
+              </div>
+              <div class="banner-slider">
+                <div class="banner-img"> 
+                  <a href="#b2"> <img src="image/2.png" alt=""> </a>
+                </div>
+              </div>
+              <div class="banner-slider">
+                <div class="banner-img"> 
+                  <a href="#b3"> <img src="image/3.png" alt=""> </a>
+                </div>
+              </div>
+              <div class="banner-slider">
+                <div class="banner-img"> 
+                  <a href="#b4"> <img src="image/4.png" alt=""> </a>
+                </div>
+              </div>
+              <div class="banner-slider">
+                <div class="banner-img"> 
+                  <a href="#b5"> <img src="image/5.png" alt=""> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-----------------Film --------------------->
+         <div class="film-heading">
+            <h2>Phim đang chiếu</h2>
+
+            <div class="film-link">
+              <a href="film_cm.html">PHIM SẮP CHIẾU</a>
+            </div>
+         </div>
+
+         <section id="film-list">
+            <!-------- box 1 --------->
+            <div class="film-box">
+              <!-- img -->
+              <div class="film-img">
+                <div class="rating"> 12+    </div>
+                <img src="image/6.png" alt="">
+              </div>
+
+              <!-- text -->
+                <a href="..\film\film_detail.html">
+                  <strong> PHIM 1 </strong>
+                </a>
+            </div>       
+            <!-------- box 2 --------->
+            <div class="film-box">
+              <!-- img -->
+              <div class="film-img">
+                <div class="rating"> 16+    </div>
+                <img src="image/7.png" alt="">
+              </div>
+
+              <!-- text -->
+                <a href="..\film\film_detail.html">
+                  <strong> PHIM 2 </strong>
+                </a>
+            </div>
+            <!-------- box 3 --------->
+            <div class="film-box">
+              <!-- img -->
+              <div class="film-img">
+                <div class="rating"> 8+    </div>
+                <img src="image/8.png" alt="">
+              </div>
+
+              <!-- text -->
+                <a href="..\film\film_detail.html">
+                  <strong> PHIM 3 </strong>
+                </a>
+            </div>           
+            <!-------- box 4 --------->
+            <div class="film-box">
+              <!-- img -->
+              <div class="film-img">
+                <div class="rating"> NR    </div>
+                <img src="image/9.png" alt="">
+              </div>
+
+              <!-- text -->
+                <a href="..\film\film_detail.html">
+                  <strong> PHIM 4 </strong>
+                </a>
+            </div>           
+            <!-------- box 5 --------->
+            <div class="film-box">
+              <!-- img -->
+              <div class="film-img">
+                <div class="rating"> 12+    </div>
+                <img src="image/10.png" alt="">
+              </div>
+
+              <!-- text -->
+                <a href="..\film\film_detail.html">
+                  <strong> PHIM 5 </strong>
+                </a>
+            </div>       
+            <!-------- box 6 --------->
+            <div class="film-box">
+              <!-- img -->
+              <div class="film-img">
+                <div class="rating"> 18+    </div>
+                <img src="image/11.png" alt="">
+              </div>
+
+              <!-- text -->
+                <a href="..\film\film_detail.html">
+                  <strong> PHIM 6 </strong>
+                </a>
+            </div>           
+            <!-------- box 7 --------->
+            <div class="film-box">
+              <!-- img -->
+              <div class="film-img">
+                <div class="rating"> 8+    </div>
+                <img src="image/12.png" alt="">
+              </div>
+
+              <!-- text -->
+                <a href="..\film\film_detail.html">
+                  <strong> PHIM 7 </strong>
+                </a>
+            </div>            
+            <!-------- box 8 --------->
+            <div class="film-box">
+              <!-- img -->
+              <div class="film-img">
+                <div class="rating"> NR    </div>
+                <img src="image/13.png" alt="">
+              </div>
+
+              <!-- text -->
+                <a href="..\film\film_detail.html">
+                  <strong> PHIM 8 </strong>
+                </a>
+            </div>        
+          
+          </section>
+
+          <!-- button -->
+          <div class="btns">
+            <a href="#">Previous</a>
+            <a href="#">Next</a>
+          </div>
+
+          <button class="backtop">         
+            <a href="#top"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+          </button>
+  
+          <div class="footblank"> </div>
+
+          <!-- java -->
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+          <script  >    
+                $(document).ready(function(){
+                $(".banner").slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: false,
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                });
+            });
+        </script>
+
+        <!--Thông tin Footer-->
+      <footer>
+          <div class="content">
+            <div class="top">
+              <div class="logo-details">
+                <a href="http://127.0.0.1:5500/menu/menu.html">
+                  <img src="https://blog.luyencode.net/wp-content/uploads/2020/10/cd-logo.png" alt="Logo" class="logo">
+              </a>
+              </div>
+              <div class="media-icons">
+                <a href="#0"><i class="fa-brands fa-facebook"></i></a>             
+                <a href="#0"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#0"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <div class="link-boxes">
+                <h4>THÔNG TIN</h4>
+                <ul class="box">
+                  <li><a href="#0">Giới thiệu</a></li>
+                  <li><a href="#0">Tin tức</a></li>
+                  <li><a href="#0">Hỏi & Đáp</a></li>
+                  <li><a href="#0">Liên hệ</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>CINEMA</h4>
+                <ul class="box">
+                  <li><a href="#0">Phim đang chiếu</a></li>
+                  <li><a href="#0">Phim sắp chiếu</a></li>
+                  <li><a href="#0">Lịch chiếu</a></li>
+                  <li><a href="#0">Khuyến mại</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>ĐIỀU KHOẢN SỬ DỤNG</h4>
+                <ul class="box">
+                  <li><a href="#0">Điều khoản chung</a></li>
+                  <li><a href="#0">Điều khoản giao dịch</a></li>
+                  <li><a href="#0">Chính sách thanh toán</a></li>
+                  <li><a href="#0">Chính sách bảo mật</a></li>
+                </ul>
+              </div>
+              <div class="link-boxes">
+                <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                <ul class="box">
+                  <li><a href="#0">Hotline: </a></li>
+                  <li><a href="#0">Giờ làm việc: </a></li>
+                  <li><a href="#0">Địa chỉ: </a></li>
+                  <li><a href="#0">Email hỗ trợ: </a></li>
+                </ul>
+              </div>
+              <!-- <div class="link-boxes">
+                <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                <ul class="box">
+                  <li><a href="#0">//Ngân hàng</a></li>
+                  <li><a href="#0">//momo</a></li>
+                </ul>
+              </div>-->
+            </div>
+          </div>
+      </footer>    
+      
+      
+    </body>
+</html>

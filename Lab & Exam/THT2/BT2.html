@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Get Multiple Selected Option Value</title>
+<link rel="stylesheet" href="./BT2.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">  </script>
+</head>
+<body>
+  <div class="table">  
+    <table>
+        <tr>
+            <td colspan="3" align="center">
+                <h1>Thực Đơn</h1>
+            </td>
+        </tr>
+        <tr class="heading-table" align="center">
+            <td>Thức ăn</td>
+            <td>Nước uống</td>
+            <td>Thời điểm</td>
+        </tr>
+        <tr>
+            <td>
+                <select name="food" id="food" multiple>
+                    <option value="20000">Bún bò</option>
+                    <option value="18000">Hủ tiếu</option>
+                    <option value="17000">Bánh canh</option>
+                    <option value="19000">Phở bò</option>
+                    <option value="15000">Nui</option>
+                    <option value="12000">Bánh mì thịt</option>
+                    <option value="15000">Bánh cuốn</option>
+                </select>
+            </td>
+            <td>
+                <select name="drink" id="drink" multiple>
+                    <option value="12000">Cà phê đá</option>
+                    <option value="15000">Cà phê sữa</option>
+                    <option value="13000">Chanh dây</option>
+                    <option value="12000">Chanh muối</option>
+                    <option value="14000">Xí muội</option>
+                    <option value="13000">Sữa tươi</option>
+                    <option value="17000">Cam vắt</option>
+                </select>
+            </td>
+            <td>
+                <input type="radio" name="day" id="morning" value="1" />
+                <label for="morning">Ban ngày</label><br />
+                <input type="radio" name="day" id="dinner" value="2" />
+                <label for="dinner">Ban đêm</label><br />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <button class="btn-calc">Tính tiền</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="table-hd">
+    <table id="table-hoahon">
+        <tr align="center" style="color: blue">
+            <th width="60%">Các món đã dùng</th>
+            <th width="40%">Tiền</th>
+        </tr>
+    </table>
+  </div>
+</body>
+<script>
+    $(".btn-calc").click(function () {
+        $(".table-hd tr:first").remove();
+        $(".table-hd tr:last").remove();
+        var day = $("input[name = day]:checked").val();
+        var food = $("#food option:selected"),
+            drink = $("#drink option:selected"),
+            table = $("#table-hoahon");
+        table.prepend("<tr><td>Món ăn</td>" + "<td>" + "Tiền" + "</td></tr>");
+        
+        food.each(function (index) {
+            var str = "<tr><td>" + $(this).text() + "</td>";
+            str += "<td>" + $(this).val() + "</td></tr>";
+            table.append(str);
+        });
+
+        drink.each(function () {
+            var str = "<tr><td>" + $(this).text() + "</td>";
+            str += "<td>" + $(this).val() + "</td></tr>";
+            table.append(str);
+        });
+
+        var totalMoney = 0;
+        table.find("tr").each(function (index) {
+            if (index >= 1) {
+                totalMoney += Number($(this).find("td").eq(1).html());
+            }
+        });
+
+        if (day == 2) {
+            totalMoney = totalMoney + totalMoney * 0.1;
+        }
+ 
+        table.append("<tr><td>Tổng tiền</td>" + "<td>" + totalMoney + " đồng</td></tr>");
+        table.show();
+    });
+</script>
+</html>
