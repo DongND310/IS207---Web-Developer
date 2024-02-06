@@ -24,7 +24,7 @@
 ## ĐỒ ÁN CUỐI KÌ
 - Front-end: HTML, CSS, Javascript, VueJS, Laravel.
 - Back-end: Laravel, MySQL.
-- File report: [Final Report](/Final_Report/Final_Report.pdf)
+- File report: <a href="https://github.com/DongND310/IS207---Web-Developer/blob/main/Final%20Report/Final%20Report.pdf"> Final Report
 <p align='center'><img style="height: 1200px" src="https://github.com/DongND310/IS207---Web-Developer/blob/5ff12dcc0a2b39134a5484de6c999d7ca9d76e89/Final%20Report/Web%20Demo.jpeg"></p>
 
 <!-- Footer -->
