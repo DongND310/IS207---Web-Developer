@@ -24,6 +24,6 @@
 ## ĐỒ ÁN CUỐI KÌ
 - Front-end: HTML, CSS, Javascript, VueJS, Laravel.
 - Back-end: Laravel, MySQL.
-<p align='center'><img style="height: 800px" src="![Cinema](<Final Report/Web Demo.jpeg>)"></p>
+<p align='center'><img style="height: 800px" src="[![Cinema](<Final Report/Web Demo.jpeg>)](https://github.com/DongND310/IS207---Web-Developer/blob/38370d5c36e01ed3df6935b9958c1740f9a8611f/Final%20Report/Web%20Demo.jpeg)https://github.com/DongND310/IS207---Web-Developer/blob/38370d5c36e01ed3df6935b9958c1740f9a8611f/Final%20Report/Web%20Demo.jpeg"></p>
 
 <!-- Footer -->
